@@ -6,6 +6,6 @@
 ### Layout da aplicação
 [Figma] https://www.figma.com/community/file/1263574581735209131
 
-- [] Desenvolvido na plataforma @Rocketseat - www.rocketseat.com.br
+## Desenvolvido na plataforma @Rocketseat - www.rocketseat.com.br
 
 
