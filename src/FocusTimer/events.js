@@ -17,6 +17,8 @@ export function setMinutes() {
     el.minutes.addEventListener('focus', () => {
         el.minutes.textContent = ""
     })
+
+    el.minutes.onkeypress = (event) => /\d/.test(event.key)
 }
 
 
