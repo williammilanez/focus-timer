@@ -4,6 +4,8 @@ import { reset } from './actions.js'
 import { kitchenTimer } from './sounds.js'
 
 export function countdown() {
+    clearTimeout(state.countdownId)
+
     if(!state.isRunning) {
         return
     }
@@ -26,7 +28,7 @@ export function countdown() {
 
     updateDisplay(minutes, seconds)
 
-    setTimeout(() => countdown(), 1000)
+    state.countdownId = setTimeout(() => countdown(), 1000)
     // setTimeout é uma função que recebe um callback
     // countdown é uma função que vai ser chamada de volta
     // 1000 é uma unidade de tempo que representa milissegundo (ms) ou equivalente a 1 segundo (s)
